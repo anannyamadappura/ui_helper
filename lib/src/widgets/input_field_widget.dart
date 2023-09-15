@@ -76,7 +76,8 @@ class InputFieldWidget extends StatelessWidget {
             errorBorder: errorBorder ??
                 circularBorder.copyWith(
                   borderSide: BorderSide(
-                      color: errorBorderColor ?? Theme.of(context).errorColor),
+                      color: errorBorderColor ??
+                          Theme.of(context).colorScheme.error),
                 ),
             focusedBorder: focusedBorder ??
                 circularBorder.copyWith(

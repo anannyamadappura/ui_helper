@@ -94,7 +94,8 @@ class ButtonWidget extends StatelessWidget {
                               !outline ? FontWeight.bold : FontWeight.w400,
                           color: !outline
                               ? Colors.white
-                              : textColor ?? Theme.of(context).accentColor,
+                              : textColor ??
+                                  Theme.of(context).colorScheme.secondary,
                         ),
                   ),
                 ],
